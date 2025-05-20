@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  background-color: #0c0f11;
+  /* background-color: blueviolet; */
+  color: #fff;
+  /* font-family: "Big Shoulders", cursive; */
+  font-family: "Roboto", sans-serif;
+}

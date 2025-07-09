@@ -51,7 +51,7 @@ const items = [
 const TechStack = () => {
   return (
     <div className="font-bold tracking-widest ">
-      <h1 className="text-gray-400">TECH STACK</h1>
+      <h1 className="text-gray-400 -mt-20">TECH STACK</h1>
       <div style={{ position: "relative" }}>
         <TechstackCard items={items} className="custom-class" />
       </div>

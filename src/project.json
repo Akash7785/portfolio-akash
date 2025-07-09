@@ -1,5 +1,6 @@
 [
   {
+    "id":1,
     "title": "📺 YouTube Clone",
     "description": "A responsive video streaming app inspired by YouTube, built with React and Redux Toolkit.",
     "highlights": [
@@ -9,18 +10,81 @@
       "Responsive UI with reusable components",
       "State management with Redux Toolkit"
     ],
+    "techStack":[
+      {
+        "name": "React",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "name": "Redux",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+      },
+      {
+        "name":"Tailwind css",
+        "icon":"https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+      },
+      {
+        "name":"React-router-dom",
+        "icon":" https://www.svgrepo.com/show/354262/react-router.svg"
+      }
+
+    ],
+    "links":[
+        {
+          "githubLink":"https://github.com/Akash7785/Youtube",
+          "liveLink":"https://youtube-liard-three.vercel.app/",
+          "videoLink":"https://youtu.be/_oL3cNWiKDU"
+        
+        }
+      ],
+
     "note": "Highlights my skills in React, API integration, and dynamic UI development."
   },
   {
+    "id":2,
+
     "title": "🎬 Netflix Clone",
     "description": "A sleek movie streaming interface built with React and TMDB API, enhanced with ChatGPT-powered recommendations.",
     "highlights": [
       "Dynamic movie listings from TMDB API",
-      "Horizontal sliders for categories (Trending, Top Rated, etc.)",
+      "Horizontal sliders for categories (Trending, Top Rated)",
       "Responsive and visually engaging UI",
       "Integrated ChatGPT for personalized movie suggestions",
-      "Reusable component structure with modern React practices"
+      "Reusable component  modern React practices"
     ],
+        "techStack":[
+      {
+        "name": "React",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "name": "Redux",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+      },
+      {
+        "name":"Tailwind css",
+        "icon":"https://img.icons8.com/?size=100&id=CIAZz2CYc6Kc&format=png&color=000000"
+      },
+      {
+        "name":"React-router-dom",
+        "icon":" https://www.svgrepo.com/show/354262/react-router.svg"
+      },
+      {
+        "name":"OpenAi",
+        "icon":"https://img.icons8.com/?size=100&id=FBO05Dys9QCg&format=png&color=FFFFFF"
+      },
+            {
+        "name":"Firebase",
+        "icon":"https://img.icons8.com/?size=100&id=62452&format=png&color=000000"
+      }
+    ],
+    "links":[
+        {
+          "githubLink":"https://github.com/Akash7785/netflix",
+          "liveLink":"https://netflix-gpt-eosin-xi.vercel.app/",
+          "videoLink":"https://youtu.be/HnPwf_EGzAI"
+        }
+      ],
     "note": "Combines API integration, AI interaction, and front-end design for an engaging user experience."
   }
 ]

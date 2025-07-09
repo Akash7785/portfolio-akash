@@ -1,63 +1,82 @@
-import React from "react";
-import react from "../assets/react.svg";
-import Img from "./Img";
-import lptp from "../assets/lptp.png";
-import projectsData from "../projects.json";
+import { IoIosGlobe } from "react-icons/io";
+import { FaGithub } from "react-icons/fa";
+import { MdLiveTv } from "react-icons/md";
+
+import projectsData from "../project.json";
 
 const ProjectCard = () => {
   return (
-    <div className="">
-      {projectsData.projects.map((data) => (
-        <div className="flex justify-between mt-5">
-          <div className="border-1 border-gray-600 rounded-md w-[100%] p-5 ">
-            {/* <div className="relative flex justify-center overflow-hidden group">
-              <img
-                className="transition-transform duration-10000 ease-in-out group-hover:translate-y-[-900px] absolute w-[470px] object-cover mt-6"
-                src={"https://i.imgur.com/kV0hdUm.png"}
-                alt=""
-              />
-              <img className="relative -mb-5 -mt-[14px]" src={lptp} alt="" />
-            </div> */}
+    <div className="flex">
+      {projectsData.map((project) => (
+        <div
+          key={project.id}
+          className=" bg-[#0c0f11] flex items-center justify-center p-6"
+        >
+          <div className="bg-[#1a1f24] rounded-2xl shadow-lg max-w-sm w-full overflow-hidden text-gray-200">
+            <img
+              src="https://i.imgur.com/kV0hdUm.png"
+              alt="Card Cover"
+              className="w-full h-64 object-cover object-top opacity-80"
+            />
 
-            <div className="py-2">
-              <h1 className="tracking-widest font-bold text-lg py-2 text-gray-300">
-                {data.title}
-              </h1>
-              <h1 className="tracking-wide text-md text-gray-300 ">
-                {data.description}
-              </h1>
-            </div>
+            <div className="p-6">
+              <h2 className="text-lg font-semibold mb-2">{project?.title}</h2>
+              <p className="text-gray-400 text-sm line-clamp-2">
+                {project?.description}
+              </p>
+              {project?.highlights.map((highlight, index) => (
+                <li key={index} className="mt-2 text-xs text-gray-400 ">
+                  {highlight}
+                </li>
+              ))}
+              <p className="mt-2 text-sm text-gray-400 ">{project?.note}</p>
+              <div className="flex items-center mt-4 gap-4 bg-[#23272f] p-1 rounded-md justify-center">
+                {project?.techStack.map((tech, index) => (
+                  <img
+                    key={index}
+                    className="w-6 rounded-md"
+                    src={tech?.icon}
+                    alt={tech?.name}
+                  />
+                ))}
+              </div>
 
-            <div className="flex flex-wrap gap-2 items-center">
-              {data.programmingLanguages.map((item) => (
-                <div
-                  style={{ backgroundColor: item.color }}
-                  className="flex justify-center py-2 px-5 text-center rounded-4xl gap-1"
-                >
-                  <img className="w-4" src={item.logo} alt="" />
-                  <p className="text-xs text-[#5CB9FD] font-medium">
-                    {item.name}
-                  </p>
+              {project?.links.map((link, index) => (
+                <div key={index}>
+                  <div className="flex items-center mt-4 gap-4 bg-[#23272f] p-1 rounded-md justify-center">
+                    <a
+                      href={link?.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-[#171515] flex items-center gap-2 text-white cursor-pointer px-4 py-1 text-sm  rounded-lg hover:bg-gray-800 transition">
+                        <FaGithub className="text-lg" />
+                        Github
+                      </button>
+                    </a>
+                    <a
+                      href={link?.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-[#2563eb] flex items-center gap-2 text-white cursor-pointer px-4 py-1 text-sm  rounded-lg hover:bg-blue-700 transition">
+                        <IoIosGlobe className="text-lg" />
+                        Live
+                      </button>
+                    </a>
+                    <a
+                      href={link?.videoLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-[#f43f5e] flex items-center gap-2 text-white cursor-pointer px-4 py-1 text-sm  rounded-lg hover:bg-rose-600 transition">
+                        <MdLiveTv className="text-lg" />
+                        Video
+                      </button>
+                    </a>
+                  </div>
                 </div>
               ))}
-            </div>
-            <div className="flex mt-5 gap-5">
-              <div className="bg-zinc-800 flex px-8 py-2 rounded-4xl gap-2">
-                <img
-                  className="w-5"
-                  src="https://pouch.jumpshare.com/preview/xEO9ndGTWTnt_0jlKZtz-A_hRRwzR55JmkQSRcFej1j7fQhZUGoZpl1oo7FIkFK-lEq2ghuE35LTmVlwlkpHC5FS7gV8buH7O8u79Biy4Qw"
-                  alt=""
-                />
-                <h1 className="text-sm ">Github Link</h1>
-              </div>
-              <div className="bg-zinc-800 flex px-8 py-2 rounded-4xl gap-2">
-                <img
-                  className="w-5 object-cover"
-                  src="https://pouch.jumpshare.com/preview/ksSqT-b4IYeHbeZ7hXhQ3vuUisEYAfRW0XjQ18wB73gLqCqp1HtYKUZktchutHZYp65dbiJpyjkMBZ6JhOYsuw83Svp0XvvRhmF7nJLZl6c"
-                  alt=""
-                />
-                <h1 className="text-sm ">Live Demo</h1>
-              </div>
             </div>
           </div>
         </div>
@@ -67,3 +86,49 @@ const ProjectCard = () => {
 };
 
 export default ProjectCard;
+
+// import { IoIosGlobe } from "react-icons/io";
+// import { FaGithub } from "react-icons/fa";
+// import { MdLiveTv } from "react-icons/md";
+
+// import projectsData from "../project.json";
+
+// const ProjectCard = () => {
+//   return (
+//     <div className="bg-[#0c0f11] min-h-screen p-8 space-y-12">
+//       {projectsData.map((project, index) => (
+//         <div
+//           key={index}
+//           className={`flex flex-col md:flex-row ${
+//             index % 2 !== 0 ? "md:flex-row-reverse" : ""
+//           } items-center bg-[#1a1f24] text-gray-200 rounded-2xl shadow-lg overflow-hidden`}
+//         >
+//           {/* Image */}
+//           <img
+//             src={project.image || "https://i.imgur.com/kV0hdUm.png"}
+//             alt={project.title}
+//             className="w-full md:w-1/2 h-64 p-2 object-cover object-top opacity-80"
+//           />
+
+//           {/* Content */}
+//           <div className="md:w-1/2 p-6">
+//             <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
+//             <p className="text-gray-400 text-sm mb-4">{project.description}</p>
+
+//             {/* Highlights */}
+//             <ul className="text-sm space-y-1 text-gray-400">
+//               {project.highlights?.map((highlight, idx) => (
+//                 <li key={idx}>• {highlight}</li>
+//               ))}
+//             </ul>
+
+//             {/* Note */}
+//             <p className="mt-3 text-sm text-gray-400">{project.note}</p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
+
+// export default ProjectCard;

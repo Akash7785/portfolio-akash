@@ -9,7 +9,7 @@ import Contact from "./Contact";
 const Navbar = () => {
   return (
     <div className="">
-      <nav className="mt-10 ">
+      <nav className="sticky top-0 bg-[#0c0f11] z-30 py-4 ">
         <ul className="flex justify-between">
           <div>
             <li className="text-xl tracking-widest cursor-pointer text-gray-400 hover:text-white font-bold">

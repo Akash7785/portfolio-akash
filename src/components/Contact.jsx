@@ -1,5 +1,3 @@
-import React from "react";
-
 import call from "../assets/call.svg";
 import mail from "../assets/mail.svg";
 

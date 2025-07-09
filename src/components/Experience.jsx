@@ -1,4 +1,5 @@
 import React from "react";
+import experienceData from "../experience.json";
 
 const Experience = () => {
   return (
@@ -6,24 +7,31 @@ const Experience = () => {
       <h1 className="font-bold text-gray-400 tracking-widest mb-10">
         EXPERIENCE
       </h1>
-      <div className="grid grid-cols-5">
-        <div className="col-span-1">
-          <p>2023 - 2024</p>
+      {experienceData.map((experience) => (
+        <div className="grid grid-cols-5">
+          <div className="col-span-1 text-sm">
+            <p>
+              {experience?.startDate} - {experience?.endDate}
+            </p>
+            <p></p>
+          </div>
+          <div className="col-span-4">
+            <p className="text-lg tracking-wide font-semibold">
+              {experience?.position}
+            </p>
+            <p className="text-sm">
+              {experience?.company} • {experience?.type}
+            </p>
+            <p className="mt-2 text-sm  ">{experience?.description}</p>
+            <div>
+              {experience?.highlights.map((highlight) => (
+                <li className="mt-2 text-sm  ">{highlight}</li>
+              ))}
+            </div>
+            <div className="border-b-1 my-5 border-gray-700"></div>
+          </div>
         </div>
-        <div className="col-span-4">
-          <p className="text-lg tracking-wide font-semibold">
-            Frontend Software Developer
-          </p>
-          <p className="">Ocean ThinkIT • Full-time</p>
-          <p className="mt-5">
-            For the past two years, I have primarily worked with startups,
-            developing products from the ground up. I have led the frontend
-            development of an AI-powered Interview Platform, building a job
-            marketplace for dentists, and creating a system for managing
-            promotional prize games.
-          </p>
-        </div>
-      </div>
+      ))}
     </div>
   );
 };

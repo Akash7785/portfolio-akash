@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "startDate": "Dec-24 ",
+    "endDate": "Mar-25",
+    "company": "Kachraseth",
+    "position": "Frontend Developer",
+    "type": "Freelance",
+    "description": "Responsive business website built with React, HTML, and Tailwind CSS, optimized for speed and scalability.",
+    "highlights": [
+      "Improved load speed by 3.7s; hosted on AWS for high performance",
+      "Achieved 90+ GTmetrix score (A Grade)",
+      "Automated workflows via JavaScript and REST APIs",
+      "Built reusable components for faster future development"
+    ],
+    "note": "Showcases strong front-end skills, performance optimization, and clean code practices."
+  },
+  {
+    "id": 2,
+    "startDate": "Nov-23",
+    "endDate": "Sep-24",
+    "company": "PD Workforce",
+    "position": "Web Developer Intern",
+    "type": "Internship",
+    "description": "Contributed to a responsive recipe web application using React.js and modern web development libraries during a 10-month internship.",
+    "highlights": [
+      "Built a React.js app integrated with the MealDB API to display recipes",
+      "Implemented a search feature to enhance content discovery by 40%",
+      "Used useState for smooth rendering and 30% better user engagement",
+      "Designed responsive UI using CSS for cross-device compatibility",
+      "Worked with Material UI, Bootstrap, Redux Toolkit, Chakra UI, and React Router"
+    ],
+    "note": "Strengthened core front-end skills and gained practical experience in scalable React development."
+  }
+]

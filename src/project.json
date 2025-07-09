@@ -1,0 +1,26 @@
+[
+  {
+    "title": "📺 YouTube Clone",
+    "description": "A responsive video streaming app inspired by YouTube, built with React and Redux Toolkit.",
+    "highlights": [
+      "Custom search suggestions using Stack Overflow API",
+      "Video playback via YouTube Data API",
+      "Recursive nested comments",
+      "Responsive UI with reusable components",
+      "State management with Redux Toolkit"
+    ],
+    "note": "Highlights my skills in React, API integration, and dynamic UI development."
+  },
+  {
+    "title": "🎬 Netflix Clone",
+    "description": "A sleek movie streaming interface built with React and TMDB API, enhanced with ChatGPT-powered recommendations.",
+    "highlights": [
+      "Dynamic movie listings from TMDB API",
+      "Horizontal sliders for categories (Trending, Top Rated, etc.)",
+      "Responsive and visually engaging UI",
+      "Integrated ChatGPT for personalized movie suggestions",
+      "Reusable component structure with modern React practices"
+    ],
+    "note": "Combines API integration, AI interaction, and front-end design for an engaging user experience."
+  }
+]

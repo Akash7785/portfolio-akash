@@ -10,14 +10,14 @@ const ProjectCard = () => {
       {projectsData.projects.map((data) => (
         <div className="flex justify-between mt-5">
           <div className="border-1 border-gray-600 rounded-md w-[100%] p-5 ">
-            <div className="relative flex justify-center overflow-hidden group">
+            {/* <div className="relative flex justify-center overflow-hidden group">
               <img
                 className="transition-transform duration-10000 ease-in-out group-hover:translate-y-[-900px] absolute w-[470px] object-cover mt-6"
                 src={"https://i.imgur.com/kV0hdUm.png"}
                 alt=""
               />
               <img className="relative -mb-5 -mt-[14px]" src={lptp} alt="" />
-            </div>
+            </div> */}
 
             <div className="py-2">
               <h1 className="tracking-widest font-bold text-lg py-2 text-gray-300">

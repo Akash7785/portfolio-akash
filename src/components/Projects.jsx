@@ -10,6 +10,10 @@ const Projects = () => {
       <div className="mb-10">
         <ProjectCard />
       </div>
+      <h1 className="font-bold sm:text-2xl text-center text-gray-400 tracking-widest mb-5">
+        🧑‍💻 Fullstack DevConnect comming Soon{" "}
+        <span className="text-xl mt-2">❤️🚀</span>
+      </h1>
     </div>
   );
 };

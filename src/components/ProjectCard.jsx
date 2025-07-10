@@ -9,7 +9,7 @@ const ProjectCard = () => {
     <div className="sm:flex">
       {projectsData.map((project) => (
         <div
-          key={project.id}
+          key={project?.id}
           className=" bg-[#0c0f11] flex items-center justify-center p-6"
         >
           <div className="bg-[#1a1f24] rounded-2xl shadow-lg max-w-sm w-full overflow-hidden text-gray-200">

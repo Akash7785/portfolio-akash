@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Element } from "react-scroll";
 import Projects from "./Projects";
 import Home from "./Home";
@@ -9,27 +8,27 @@ import Contact from "./Contact";
 const Navbar = () => {
   return (
     <div className="">
-      <nav className="sticky top-0 bg-[#0c0f11] z-30 py-4 ">
-        <ul className="flex justify-between">
+      <nav className="sticky top-0 bg-[#0c0f11] z-30 py-4">
+        <ul className="flex justify-between flex-wrap items-center">
           <div>
-            <li className="text-xl tracking-widest cursor-pointer text-gray-400 hover:text-white font-bold">
+            <li className="text-sm sm:text-xl tracking-widest cursor-pointer text-gray-400 hover:text-white font-bold">
               <Link smooth={true} duration={500} to="home">
                 AKASH DEV
               </Link>
             </li>
           </div>
-          <div className="flex gap-6">
-            <li className="cursor-pointer text-lg text-gray-400 hover:text-white">
+          <div className="flex gap-4 sm:gap-6">
+            <li className="text-sm sm:text-lg cursor-pointer text-gray-400 hover:text-white">
               <Link smooth={true} duration={500} to="experience">
                 Work Experience
               </Link>
             </li>
-            <li className="cursor-pointer text-lg text-gray-400 hover:text-white">
+            <li className="text-sm sm:text-lg cursor-pointer text-gray-400 hover:text-white">
               <Link smooth={true} duration={500} to="project">
                 Project
               </Link>
             </li>
-            <li className="cursor-pointer text-lg text-gray-400 hover:text-white">
+            <li className="text-sm sm:text-lg cursor-pointer text-gray-400 hover:text-white">
               <Link smooth={true} duration={500} to="contact">
                 Contact
               </Link>
@@ -54,25 +53,6 @@ const Navbar = () => {
       <Element name="contact">
         <Contact />
       </Element>
-
-      {/* <div>
-        <h1 className="text-xl tracking-widest cursor-pointer text-gray-400 hover:text-white font-bold">
-          AKASH DEV
-        </h1>
-      </div>
-      <div>
-        <ul className="flex gap-10">
-          <li className="cursor-pointer text-lg text-gray-400 hover:text-white">
-            Projects
-          </li>
-          <li className="cursor-pointer text-gray-400 hover:text-white text-lg">
-            About
-          </li>
-          <li className="cursor-pointer text-gray-400 hover:text-white text-lg">
-            Contact
-          </li>
-        </ul>
-      </div> */}
     </div>
   );
 };

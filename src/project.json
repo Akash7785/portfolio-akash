@@ -2,6 +2,7 @@
   {
     "id":1,
     "title": "📺 YouTube Clone",
+    "image":"https://i.imgur.com/kV0hdUm.png",
     "description": "A responsive video streaming app inspired by YouTube, built with React and Redux Toolkit.",
     "highlights": [
       "Custom search suggestions using Stack Overflow API",
@@ -44,6 +45,7 @@
     "id":2,
 
     "title": "🎬 Netflix Clone",
+    "image":"https://i.ibb.co/nMB89TRy/Screenshot-2025-07-09-225013.png",
     "description": "A sleek movie streaming interface built with React and TMDB API, enhanced with ChatGPT-powered recommendations.",
     "highlights": [
       "Dynamic movie listings from TMDB API",
